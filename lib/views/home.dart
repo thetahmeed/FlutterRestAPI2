@@ -11,6 +11,16 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Post>? posts;
+  bool isLoaded = false;
+
+  @override
+  void initState() {
+    getData();
+
+    super.initState();
+  }
+
+  getData() async {
     posts = await ApiServices().getPosts();
     if (posts != null) {
       setState(() {
