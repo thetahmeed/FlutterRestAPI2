@@ -7,4 +7,7 @@ class ApiServices {
   Future<List<Post>?> getPosts() async {}
   // 1. Created the fuction to get all posts
   Future<List<Post>?> getPosts() async {
+    // 3. Created the client
+    var client = http.Client();
+
 }
