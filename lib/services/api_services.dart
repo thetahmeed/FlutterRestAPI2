@@ -13,4 +13,7 @@ class ApiServices {
     // 4. The url
     var url = Uri.parse('https://jsonplaceholder.typicode.com/posts');
 
+    // 5. Getting the response
+    var response = await client.get(url);
+
 }
