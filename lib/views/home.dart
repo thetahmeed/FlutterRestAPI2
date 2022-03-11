@@ -14,7 +14,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text("Home Page"),
       ),
-      body: const Center(child: Text("Testing...")),
+      body: ListView.builder(
+        itemCount: 12,
+        itemBuilder: (context, index) {
+          return Text('ListView item $index');
+        },
+      ),
     );
   }
 }
