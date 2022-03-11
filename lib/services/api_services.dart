@@ -22,4 +22,9 @@ class ApiServices {
 
       // 7. Returning the response
       return postFromJson(json);
+    } else {
+      // Returning null if response is not success
+      return null;
+    }
+  }
 }
