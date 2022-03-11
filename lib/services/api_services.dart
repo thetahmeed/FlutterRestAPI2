@@ -16,4 +16,10 @@ class ApiServices {
     // 5. Getting the response
     var response = await client.get(url);
 
+    // 6. Getting the response or not
+    if (response.statusCode == 200) {
+      var json = response.body;
+
+      // 7. Returning the response
+      return postFromJson(json);
 }
