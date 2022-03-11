@@ -12,9 +12,9 @@ String postToJson(List<Post> data) =>
 
 class Post {
   Post({
-    this.userId,
-    this.id,
-    this.title,
+    required this.userId,
+    required this.id,
+    required this.title,
     this.body,
   });
 
