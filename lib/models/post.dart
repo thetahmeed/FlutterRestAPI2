@@ -21,7 +21,7 @@ class Post {
   int userId;
   int id;
   String title;
-  String body;
+  String? body;
 
   factory Post.fromJson(Map<String, dynamic> json) => Post(
         userId: json["userId"],
