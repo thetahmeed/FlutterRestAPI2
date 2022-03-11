@@ -10,4 +10,7 @@ class ApiServices {
     // 3. Created the client
     var client = http.Client();
 
+    // 4. The url
+    var url = Uri.parse('https://jsonplaceholder.typicode.com/posts');
+
 }
